@@ -40,7 +40,7 @@ exports.getstaticmapurl2 = (jason, res) => {
     	res.set('Access-Control-Allow-Origin', '*')    
 	   	.set('Access-Control-Allow-Methods', 'GET, POST')
       
-		var staticmapurl = "https://maps.googleapis.com/maps/api/staticmap?center="+center+"&zoom=1&size=400x400&markers=color:blue%7Clabel:S%7C"+purchasesurl+"&markers=size:tiny%7Ccolor:green%7CDelta+Junction,AK&markers=size:mid%7Ccolor:0xFFFF00%7Clabel:C%7CTok,AK&key=AIzaSyBpjrPXAwcNXinDaRCy3ObPHlBHuAGhwR4"
+		var staticmapurl = "https://maps.googleapis.com/maps/api/staticmap?center="+center+"&zoom=1&size=400x400&markers=color:blue%7Clabel:S%7C"+purchasesurl+"&markers=size:tiny%7Ccolor:green%7CDelta+Junction,AK&markers=size:mid%7Ccolor:0xFFFF00%7Clabel:C%7CTok,AK&key=YOURKEY"
 		console.log("staticmapurl" +staticmapurl)
 		if (res){
 			res.status(200).send('{"url":"'+staticmapurl +'"}');	
