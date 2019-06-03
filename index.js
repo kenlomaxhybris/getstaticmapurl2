@@ -14,7 +14,7 @@ initjason = (jason) => {
   
 exports.getstaticmapurl2 = (jason, res) => {
   jason = initjason(jason)
-  var END_POINT= "https://xf20190520a.xf20190520a.cluster.extend.cx.cloud.sap/purchasesByNameSpace?nameSpace=mylambda"
+  var END_POINT= "https://cloudlab6.cloudlab6.cluster.extend.cx.cloud.sap/purchasesByNameSpace?nameSpace=mylambda"
 
   var request = https.get(END_POINT, (res1) => {	
 	res1.on('data', (d) => {
